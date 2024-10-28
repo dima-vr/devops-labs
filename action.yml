@@ -1,0 +1,15 @@
+name: 'Send Telegram Message'
+description: 'A GitHub Action to send custom messages to Telegram'
+inputs:
+  to:
+    description: 'The recipient Telegram ID'
+    required: true
+  token:
+    description: 'Telegram bot token'
+    required: true
+  args:
+    description: 'Custom message to send'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
